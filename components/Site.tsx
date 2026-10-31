@@ -1,7 +1,7 @@
 'use client';
 import {useState} from "react";
 import {ArrowDownRight,ArrowRight,ArrowUpRight,Menu,X,Sun,Moon,ShieldCheck,ScanFace,Microscope,Sparkles,Video,Phone,Mail,MapPin} from "lucide-react";
-const doctor="/doctor-portrait.webp";
+const doctor="/doctor-portrait-homepage.jpg";
 const services=[{n:"01",I:ShieldCheck,t:"Chirurgia cutanea",d:"Asportazione e trattamento di neoformazioni e lesioni cutanee."},{n:"02",I:Microscope,t:"Oncologia dermatologica",d:"Prevenzione, diagnosi precoce e trattamento delle neoplasie cutanee."},{n:"03",I:ScanFace,t:"Laser dermatologico",d:"Tecnologie laser per diverse condizioni e problematiche della pelle."},{n:"04",I:Sparkles,t:"Estetica cutanea",d:"Percorsi e trattamenti per la cura e il benessere della pelle."}];
 const conditions={"Chirurgia":["Angiomi e lesioni vascolari","Basaliomi","Biopsie","Carcinomi","Cheratosi","Cicatrici e cicatrici da acne","Cisti","Condilomi","Lesioni benigne","Nei","Unghie incarnite e inspessite"],"Oncologia":["Basaliomi e carcinomi basocellulari","Biopsie di pelle, mucose e tessuti","Carcinomi basocellulari e squamocellulari","Danno solare e fotoaging","Lesioni premaligne e maligne","Spinaliomi"],"Laser & estetica":["Acne e cicatrici","Angiomi e capillari","Inestetismi del viso","Macchie cutanee","Laser resurfacing","Ringiovanimento di viso, collo e mani","Sudorazione ascellare aumentata","Trattamenti di medicina estetica"]};
 export default function Site(){const [theme,setTheme]=useState("dark"),[open,setOpen]=useState(false),[tab,setTab]=useState<keyof typeof conditions>("Chirurgia");const nav=[["Il medico","#medico"],["Aree di competenza","#aree"],["Trattamenti","#trattamenti"],["Visita online","#online"],["Blog","#blog"],["Contatti","#contatti"]];
