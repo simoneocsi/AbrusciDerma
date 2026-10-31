@@ -26,3 +26,46 @@ h1,h2,h3,p{margin-top:0}h1,h2{font-family:'Playfair Display',serif;font-weight:4
 @media(max-width:1100px){.nav{gap:14px}.nav a{font-size:10px}.header{padding:0 4%}.hero{padding-left:7%;padding-right:7%}.section-pad{padding:90px 7%}.service-card{padding:22px 16px}.service-card h3{font-size:21px}}
 @media(max-width:800px){.section-pad{padding:72px 7%;scroll-margin-top:75px}.instagram{grid-template-columns:1fr;gap:35px}.instagram-aside{min-height:220px}.announcement{font-size:7px;letter-spacing:1px}.header{height:75px}.brand span{font-size:18px}.brand small{font-size:6px}.nav{display:none;position:absolute;top:75px;left:0;right:0;padding:25px 7%;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;gap:20px}.nav-open{display:flex}.nav a{font-size:13px}.theme-toggle span{display:none}.button-small{display:none}.mobile-toggle{display:block}.hero{min-height:auto;grid-template-columns:1fr;gap:30px;padding:48px 7% 65px}.hero-copy{max-width:100%}.hero h1{font-size:clamp(48px,11vw,72px)}.hero-visual{height:min(58svh,420px)}.hero-image-wrap{width:min(82%,380px)}.image-caption{left:9%}.hero-bottom{left:7%;right:7%;font-size:7px}.section-pad{padding:75px 7%}.intro{grid-template-columns:1fr;gap:20px}.intro-mark{display:none}.intro-bottom{display:block}.intro-bottom p{margin-bottom:25px}.section-heading{display:block}.section-heading>p{margin-top:25px}.service-grid{grid-template-columns:1fr 1fr}.service-card:nth-child(3){border-left:1px solid var(--line)}.service-card{border-bottom:1px solid var(--line);min-height:230px}.method{grid-template-columns:1fr;gap:35px}.method-image{height:360px}.tabs{flex-direction:column}.tab{border-left:1px solid var(--line);border-bottom:1px solid var(--line)}.condition-list{grid-template-columns:1fr;padding:20px 10px}.online{grid-template-columns:1fr;gap:28px}.online-video{grid-column:1;grid-row:1;width:calc(100% + 14vw);margin-left:-7vw;max-width:none;aspect-ratio:auto;border-left:0;border-right:0}.online-video video{width:100%;height:auto;object-fit:contain}.online-copy{grid-column:1;grid-row:2}.online-number{display:none}.blog-head{display:block}.blog-head>.text-link{margin-top:22px}.editorial-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact{grid-template-columns:1fr;gap:35px}.footer-main{align-items:flex-start;gap:25px;flex-wrap:wrap}.footer-main>p{font-size:17px}.footer-bottom{flex-wrap:wrap}.footer-bottom div{order:3;width:100%;flex-wrap:wrap}}
 @media(max-width:430px){.hero-visual{height:350px}.hero-actions{align-items:flex-start;flex-direction:column;gap:20px}.hero-visual{height:350px}.hero-note{margin-top:40px}.service-grid{grid-template-columns:1fr}.service-card,.service-card:first-child{border-left:1px solid var(--line);border-right:1px solid var(--line)}.service-card{min-height:205px}.intro h2,.section-heading h2,.method h2,.online h2,.blog h2,.contact h2{font-size:43px}.editorial-grid{grid-template-columns:1fr}.editorial-image{height:190px}.footer-bottom{font-size:7px}}
+
+/* Dedicated teledermatology information page */
+.tele-page{min-height:100vh;--bg:#0b1114;--surface:#111a1e;--surface-2:#172227;--text:#f2eee7;--muted:#a7aaa5;--line:rgba(232,224,210,.16);--accent:#cbb69a;--accent-strong:#e0c8a7;background:var(--bg);color:var(--text);overflow:hidden}
+.tele-header{position:relative}
+.tele-header .text-link{gap:9px}
+.tele-hero{padding-top:90px;padding-bottom:65px;max-width:1120px;margin:auto}
+.tele-hero h1{font-size:clamp(58px,8vw,100px);margin-bottom:24px}
+.tele-subtitle{font-size:clamp(28px,3vw,42px);margin:0 0 22px}
+.tele-hero>p:not(.eyebrow),.tele-section>p:not(.eyebrow),.tele-section li{font-size:14px;line-height:1.9;color:var(--muted)}
+.tele-hero>p:not(.eyebrow){max-width:850px}
+.tele-safety{display:flex;align-items:center;gap:14px;border:1px solid var(--line);padding:18px 20px;margin-top:35px;color:var(--accent);font-size:12px;line-height:1.7}
+.tele-section{border-top:1px solid var(--line);max-width:1440px;margin:auto}
+.tele-section h2,.tele-contact h2{font-size:clamp(40px,5vw,65px);line-height:1.1;margin:0 0 25px}
+.tele-section h3{font:26px 'Playfair Display',serif;margin:34px 0 15px}
+.tele-section>p:not(.eyebrow){max-width:900px}
+.tele-conditions{background:var(--surface);max-width:none}
+.tele-conditions>p,.tele-conditions>.eyebrow,.tele-conditions>h2,.tele-groups{max-width:1150px;margin-left:auto;margin-right:auto}
+.tele-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:38px}
+.tele-group{border-top:1px solid var(--line);padding-top:20px}
+.tele-group h3{color:var(--accent);margin:0 0 15px}
+.tele-group ul,.tele-section>ul{padding-left:19px}
+.tele-group li{padding:3px 0}
+.tele-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:38px}
+.tele-steps article{border:1px solid var(--line);padding:26px;position:relative;min-height:270px}
+.tele-steps article>svg{color:var(--accent);width:27px;height:27px;stroke-width:1.3}
+.tele-steps article>span{position:absolute;right:24px;top:24px;color:var(--accent);font-size:10px;letter-spacing:1px}
+.tele-steps h3{margin:28px 0 12px}
+.tele-steps p{font-size:12px;line-height:1.85;color:var(--muted)}
+.tele-cost{background:var(--surface)}
+.tele-note{border-left:2px solid var(--accent);padding:14px 20px;background:var(--surface-2);margin:28px 0}
+.tele-section .text-link{margin-top:12px}
+.tele-form-info strong{color:var(--text)}
+.tele-form-info a:not(.button){color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.tele-small{font-size:11px!important}
+.tele-contact{padding:80px 10%;border-top:1px solid var(--line);background:radial-gradient(ellipse at 15% 60%,var(--surface-2),transparent 60%)}
+.tele-contact h2{margin-bottom:32px}
+.tele-contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.tele-contact-grid a{display:flex;align-items:center;gap:15px;padding:18px;border:1px solid var(--line);font-size:12px}
+.tele-contact-grid svg{color:var(--accent);flex:none}
+.tele-contact-grid span{display:flex;flex-direction:column;gap:6px}
+.tele-contact-grid small{font-size:9px;letter-spacing:1px;color:var(--muted)}
+.tele-hours{font-size:12px;color:var(--muted);margin:25px 0}
+@media(max-width:800px){.tele-header{height:75px;padding:0 7%}.tele-header .brand span{font-size:18px}.tele-header .brand small{font-size:6px}.tele-header>.text-link{font-size:8px}.tele-hero{padding-top:60px}.tele-groups,.tele-steps,.tele-contact-grid{grid-template-columns:1fr}.tele-steps article{min-height:0}.tele-contact{padding:65px 7%}.tele-section h3{font-size:23px}}
